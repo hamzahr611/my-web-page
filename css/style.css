@@ -29,15 +29,15 @@ p {
 }
 
 a:link {
-  color: #FF5733; /* Custom link color */
+  color: #2e2d2d; /* Custom link color */
 }
 
 a:visited {
-  color: #DF4C2D; /* Custom visited link color */
+  color: #000000; /* Custom visited link color */
 }
 
 a:hover {
-  color: #9F3620; /* Custom hover link color */
+  color: #c7bbb9; /* Custom hover link color */
 }
 
 .main-bg {
