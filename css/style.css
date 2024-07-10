@@ -1,48 +1,93 @@
-
 header {
-    background-color: #FF5733;
-  }
-  
-  footer {
-    background-color: #DF4C2D;
-  }
-  
-  section {
-    background-color: #BF4126;
-  }
-  
-  nav {
-    background-color: #9F3620;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: #333333;
-  }
-  
-  p {
-    font-family: Arial, sans-serif;
-    color: #666666;
-  }
-  
-  a:link {
-    color: blue;
-  }
-  
-  a:visited {
-    color: #200B06;
-  }
-  
-  a:hover {
-    color: red;
-  }
-  
-  .main-bg {
-    background-color: #f0f0f0;
-  }
-  
-  .text-color {
-    color: #333333;
-  }
-  
+  background-color: #FF5733; /* Header background color */
+  color: #ffffff; /* Text color for better readability */
+}
+
+footer {
+  background-color: #DF4C2D; /* Footer background color */
+  color: #ffffff; /* Text color for better readability */
+}
+
+section {
+  background-color: #BF4126; /* Section background color */
+  color: #ffffff; /* Text color for better readability */
+}
+
+nav {
+  background-color: #9F3620; /* Navigation background color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff; /* Text color for better readability */
+}
+
+p {
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Text color for better readability */
+}
+
+a:link {
+  color: #FF5733; /* Custom link color */
+}
+
+a:visited {
+  color: #DF4C2D; /* Custom visited link color */
+}
+
+a:hover {
+  color: #9F3620; /* Custom hover link color */
+}
+
+.main-bg {
+  background-color: #f0f0f0; /* Main background color */
+}
+
+.text-color {
+  color: #333333; /* Text color */
+}
+
+/* Additional styles for better layout */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+main {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ffffff;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
