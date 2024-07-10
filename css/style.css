@@ -1,18 +1,18 @@
 
 header {
-    background-color: #f2f2f2;
+    background-color: #FF5733;
   }
   
   footer {
-    background-color: #f2f2f2;
+    background-color: #DF4C2D;
   }
   
   section {
-    background-color: #ffffff;
+    background-color: #BF4126;
   }
   
   nav {
-    background-color: #e0e0e0;
+    background-color: #9F3620;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -31,7 +31,7 @@ header {
   }
   
   a:visited {
-    color: purple;
+    color: #200B06;
   }
   
   a:hover {
