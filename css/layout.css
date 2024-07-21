@@ -1,0 +1,116 @@
+/* layout.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: relative; /* Needed for absolute positioning of logo */
+  }
+  
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #111;
+  }
+  
+  aside {
+    float: right;
+    width: 20vw;
+    padding: 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+  }
+  
+  main {
+    width: 80vw;
+    margin-right: 20vw;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figure figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Float images alternately */
+  section:nth-child(odd) figure {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+  }
+  
+  section:nth-child(even) figure {
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Logo positioning */
+  header img.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gallery figure {
+    width: 30%;
+  }
+  
