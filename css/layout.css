@@ -1,7 +1,14 @@
+/* layout.css */
+
+/* General Body Styling */
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Header Styling */
 header {
   background-color: #f8f8f8;
   padding: 20px;
@@ -10,19 +17,33 @@ header {
   position: relative; /* Needed for absolute positioning of logo */
 }
 
+header img.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: auto;
+}
+
+/* Navigation Styling */
 nav {
   background-color: #857f7f;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex: 1;
 }
 
 nav ul li {
-  float: left;
+  margin: 0 10px;
 }
 
 nav ul li a {
@@ -37,8 +58,18 @@ nav ul li a:hover {
   background-color: #111;
 }
 
+/* Sign In link styling */
+nav .sign-in {
+  margin-left: auto;
+}
+
+/* Main Content Styling */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 aside {
-  float: right;
   width: 20vw;
   padding: 20px;
   box-sizing: border-box;
@@ -57,6 +88,7 @@ section {
   margin-bottom: 20px;
 }
 
+/* Figure Styling */
 figure {
   margin: 0;
   padding: 0;
@@ -70,39 +102,42 @@ figure img {
 figure figcaption {
   text-align: center;
   font-size: 0.9em;
-  color: #000000;
+  color: #000;
   padding: 5px;
   border-top: 1px solid #ddd;
 }
 
-/* Float images alternately */
-section:nth-child(odd) figure {
-  float: left;
-  width: 45%;
-  margin-right: 5%;
+/* Team Page Specific Styling */
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
 }
 
-section:nth-child(even) figure {
-  float: right;
-  width: 45%;
-  margin-left: 5%;
+.team-member {
+  flex: 1 1 30%;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+.team-member img {
+  border-radius: 50%;
 }
 
-/* Logo positioning */
-header img.logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 50px;
-  height: auto;
+.team-member h3 {
+  margin-top: 15px;
 }
 
+.team-member p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Gallery Styling */
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -110,4 +145,71 @@ header img.logo {
 
 .gallery figure {
   width: 30%;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-col {
+  flex: 1;
+  padding: 10px;
+}
+
+footer .footer-col a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer .footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery figure {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .footer-col {
+    width: 100%;
+    text-align: center;
+  }
 }
