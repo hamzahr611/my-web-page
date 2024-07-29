@@ -31,7 +31,7 @@ nav {
   display: flex;
   justify-content: flex-end; /* Align items to the end (right side) */
   align-items: center;
-  padding: 10px 40px;
+  padding: 10px 20px;
   position: sticky; /* Keeps the nav fixed at the top */
   top: 0; /* Position from the top of the viewport */
   right: 0; /* Position from the right edge of the viewport */
