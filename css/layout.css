@@ -29,9 +29,15 @@ header img.logo {
 nav {
   background-color: #857f7f;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* Align items to the end (right side) */
   align-items: center;
   padding: 10px 40px;
+  position: sticky; /* Keeps the nav fixed at the top */
+  top: 0; /* Position from the top of the viewport */
+  right: 0; /* Position from the right edge of the viewport */
+  z-index: 1000; /* Ensures it is on top of other content */
+  width: 100%; /* Full width to ensure it aligns correctly */
+  box-sizing: border-box; /* Includes padding in the width */
 }
 
 nav ul {
@@ -39,7 +45,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex: 1;
+  flex-direction: row; /* Horizontal layout of list items */
 }
 
 nav ul li {
@@ -60,7 +66,7 @@ nav ul li a:hover {
 
 /* Sign In link styling */
 nav .sign-in {
-  margin-left: auto;
+  margin-left: auto; /* Pushes the Sign In link to the far right */
 }
 
 /* Main Content Styling */
@@ -173,9 +179,18 @@ footer .footer-col a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
   nav ul {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center items horizontally */
+  }
+
+  nav .sign-in {
+    margin-left: 0; /* Remove margin to align properly */
+    margin-top: 10px; /* Space between nav items and Sign In link */
   }
 
   aside {
