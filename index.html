@@ -22,18 +22,26 @@
       </ul>
     </nav>    
   </header>
-  <main>
-    <aside>
-      <nav>
-        <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#why-class">Why I'm Taking This Class</a></li>
-          <li><a href="#goals">My Goals</a></li>
-          <li><a href="#technologies">Technologies I Use</a></li>
-        </ul>
-      </nav>
+  <main class="grid-container">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#why-class">Why I'm Taking This Class</a></li>
+        <li><a href="#goals">My Goals</a></li>
+        <li><a href="#technologies">Technologies I Use</a></li>
+      </ul>
+    </nav>
+    <aside class="contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#why-class">Why I'm Taking This Class</a></li>
+        <li><a href="#goals">My Goals</a></li>
+        <li><a href="#technologies">Technologies I Use</a></li>
+        <li><a href="#images">Gallery</a></li>
+      </ul>
     </aside>
-    <section id="about-me">
+    <section id="about-me" class="main-content">
       <h2>About Me</h2>
       <figure>
         <img src="images/image1-thumb.jpg" alt="About Me Image">
@@ -45,83 +53,67 @@
     <section id="why-class">
       <h2>Why I'm Taking This Class</h2>
       <figure>
-        <img src="images/image2-thumb.jpg" alt="Why Class Image">
-        <figcaption>Learning web development</figcaption>
+        <img src="images/image2-thumb.jpg" alt="Why I'm Taking This Class Image">
+        <figcaption>Passionate about web development</figcaption>
       </figure>
-      <p>I've always been interested in technology and web design. This class provides a great opportunity to learn the fundamentals of web development, which I believe will be essential in my future career. By mastering these skills, I hope to contribute to exciting projects and make a positive impact in the tech industry. I am particularly excited about the collaborative aspect of this class, as working with peers will enhance my learning experience and expose me to diverse perspectives and ideas.</p>
-      <p>Furthermore, the hands-on experience gained from this class will help me build a solid foundation in web development. I am eager to apply these skills in real-world scenarios and continue my journey as a lifelong learner in the ever-evolving field of technology. I believe that the practical knowledge and problem-solving abilities I acquire here will be invaluable as I advance in my career.</p>
+      <p>I'm taking this class to improve my skills in web development and learn the latest techniques and tools used in the industry. I believe that having a strong foundation in web development will open up numerous opportunities for me in the future.</p>
     </section>
     <section id="goals">
       <h2>My Goals</h2>
       <figure>
-        <img src="images/image3-thumb.jpg" alt="Goals Image">
-        <figcaption>Setting future goals</figcaption>
+        <img src="images/image3-thumb.jpg" alt="My Goals Image">
+        <figcaption>Aspiring to become a proficient web developer</figcaption>
       </figure>
-      <p>My primary goal is to become a full-stack developer, capable of handling both front-end and back-end development. I am particularly interested in learning more about JavaScript frameworks such as <em>React</em> and <em>Node.js</em>. Additionally, I plan to familiarize myself with databases and server management to have a well-rounded skill set. I am also keen on developing my understanding of cloud computing and DevOps practices, which are crucial for modern web development and deployment.</p>
-      <p>In the long term, I aspire to work on projects that involve artificial intelligence and machine learning. I believe that these technologies have the potential to revolutionize various industries, and I am excited about the possibilities they hold for the future. By integrating AI and machine learning into web development, I hope to create intelligent applications that offer enhanced user experiences and solve complex problems efficiently.</p>
+      <p>My primary goal is to become a proficient web developer capable of creating dynamic and responsive websites. I aim to master various web technologies and frameworks, and to apply my knowledge in real-world projects.</p>
     </section>
     <section id="technologies">
       <h2>Technologies I Use</h2>
-      <table>
-        <caption>Programming Languages and Frameworks</caption>
-        <thead>
-          <tr>
-            <th scope="col">Technology</th>
-            <th scope="col">Experience Level</th>
-            <th scope="col">Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>JavaScript</td>
-            <td>Intermediate</td>
-            <td>Used in many projects</td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td>Intermediate</td>
-            <td>Building dynamic UIs</td>
-          </tr>
-          <tr>
-            <td>Node.js</td>
-            <td>Beginner</td>
-            <td>Server-side scripting</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>Intermediate</td>
-            <td>Data analysis and scripting</td>
-          </tr>
-          <tr>
-            <td>Machine Learning</td>
-            <td>Beginner</td>
-            <td>Exploring AI concepts</td>
-          </tr>
-        </tbody>
-      </table>
+      <figure>
+        <img src="images/image4-thumb.jpg" alt="Technologies I Use Image">
+        <figcaption>Leveraging modern technologies</figcaption>
+      </figure>
+      <p>I use a variety of technologies in my web development projects, including HTML, CSS, JavaScript, and frameworks such as React and Angular. I'm also familiar with backend technologies like Node.js and databases like MongoDB.</p>
     </section>
-    <section id="images">
+    <section id="images" class="gallery">
       <h2>Gallery</h2>
-      <div class="gallery">
-        <figure>
-          <a href="images/image1-lg.jpg" target="_blank"><img src="images/image1-thumb.jpg" alt="Coding in HTML"></a>
-          <figcaption>Coding in HTML</figcaption>
-        </figure>
-        <figure>
-          <a href="images/image2-lg.jpg" target="_blank"><img src="images/image2-thumb.jpg" alt="The HTML logo"></a>
-          <figcaption>The HTML logo</figcaption>
-        </figure>
-        <figure>
-          <a href="images/image3-lg.jpg" target="_blank"><img src="images/image3-thumb.jpg" alt="Image of a pencil and notebook"></a>
-          <figcaption>Image of a pencil and notebook</figcaption>
-        </figure>
-      </div>
+      <figure>
+        <img src="images/gallery1-thumb.jpg" alt="Gallery Image 1">
+        <figcaption>Image 1</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery2-thumb.jpg" alt="Gallery Image 2">
+        <figcaption>Image 2</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery3-thumb.jpg" alt="Gallery Image 3">
+        <figcaption>Image 3</figcaption>
+      </figure>
+      <figure>
+        <img src="images/gallery4-thumb.jpg" alt="Gallery Image 4">
+        <figcaption>Image 4</figcaption>
+      </figure>
     </section>
-    <footer>
-      <p>Thank you for visiting my page!</p>
-      <p>Email me at: <a href="mailto:e3288345@student.dcccd.edu">e3288345@student.dcccd.edu</a></p>
-      <p>Visit <a href="https://www.dcccd.edu" target="_blank">Dallas College</a></p>
-    </footer>
   </main>
+  <footer>
+    <div class="footer-col">
+      <p>External Links:</p>
+      <ul>
+        <li><a href="https://www.dcccd.edu" target="_blank">Dallas College</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p>&copy; 2024 <a href="mailto:e3288345@student.dcccd.edu">Email the Webmaster</a></p>
+    </div>
+    <div class="footer-col">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
